@@ -178,5 +178,31 @@
         </div>
       </div>
     </footer>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-firestore.js"></script>
+    
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDumkj4jlfC23vg3liu5JcNmbIU2hz79sE",
+        authDomain: "eliteminers-a2374.firebaseapp.com",
+        databaseURL: "https://eliteminers-a2374.firebaseio.com",
+        projectId: "eliteminers-a2374",
+        storageBucket: "eliteminers-a2374.appspot.com",
+        messagingSenderId: "54107625680",
+        appId: "1:54107625680:web:2da61a75a956074d99e6d5"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      // Make auth and firestore references
+      const auth = firebase.auth();
+      const db = firebase.firestore();
+    </script>
+    
+    
+    <script src="js/auth.js"></script>
   </body>
 </html>
